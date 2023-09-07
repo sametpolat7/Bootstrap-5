@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>Images</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-center">Bootstrap 5 Images</h1>
+    </header>
+    <main>
+        <section>
+            <div class="container mt-5">
+                <div class="row mx-auto" style="width: 60%;">
+                    <div class="col-sm-4"><!-- .rounded-->
+                        <!-- The .rounded class adds rounded corners to an image:-->
+                        <img class="rounded" src="https://picsum.photos/200/300" alt="">
+                    </div>
+                    <div class="col-sm-4"> <!-- .rounded-circle -->
+                         <!-- The .rounded-circle class shapes the image to a circle: -->
+                        <img src="https://picsum.photos/200/300" alt="" class="rounded-circle">
+                    </div>
+                    <div class="col-sm-4"> <!-- .img-thumbnail -->
+                        <!-- The .img-thumbnail class shapes the image to a thumbnail (bordered): -->
+                        <img src="https://picsum.photos/200/300" alt="" class="img-thumbnail">
+                    </div>
+                </div>
+                <div class="container mt-3"> <!-- Aligning Images -->
+                    <img src="https://picsum.photos/200/300" class="float-start" alt="Paris" width="304" height="236"> 
+                    <img src="https://picsum.photos/200/300" class="float-end" alt="Paris" width="304" height="236"> 
+                </div>
+                <div class="container mt-3"> <!-- Centered Images-->
+                    <!--
+                         Center an image by adding the utility classes .mx-auto (margin:auto) and .d-block (display:block) to the image:
+                     -->
+                    <img class="rounded mx-auto d-block" src="https://picsum.photos/200/300" alt="" style="clear: both">
+                </div>
+                <div class="container mt-5">
+                    <img src="https://picsum.photos/540/300" alt="" class="img-fluid rounded mx-auto d-block">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

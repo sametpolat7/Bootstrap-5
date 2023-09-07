@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1 class="text-center">Bootstrap 5 Text/Typography</h1>
+        <!-- 
+            Bootstrap 5 uses a default font-size of 1rem (16px by default), and its line-height is 1.5.
+
+            In addition, all <p> elements have margin-top: 0 and margin-bottom: 1rem (16px by default).
+         -->
+    </header>
+    <main>
+        <section> <!-- <h1> - <h6> -->
+            <!-- 
+                Bootstrap 5 styles HTML headings (<h1> to <h6>)  with a bolder font-weight and a responsive font-size
+            -->
+            <div class="container mt-3">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+            </div>
+        </section>
+        <section> <!--Display Headings-->
+            <!-- 
+                Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight), and there are six classes to choose from: .display-1 to .display-6:
+            -->
+            <div class="continer mt-3">
+                <h1 class="display-1">Display Heading 1</h1>
+                <h1 class="display-2">Display Heading 2</h1>
+                <h1 class="display-3">Display Heading 3</h1>
+                <h1 class="display-4">Display Heading 4</h1>
+                <h1 class="display-5">Display Heading 5</h1>
+                <h1 class="display-6">Display Heading 6</h1>
+            </div>
+        </section>
+        <section> <!--Other Elements-->
+            <article> <!-- <mark> -->
+                <!-- Bootstrap 5 will style <mark> and .mark with a yellow background color and some padding: -->
+                <div class="container mt-3">
+                    <p>Lorem ipsum <mark>dolor sit,</mark> amet consectetur adipisicing elit.</p>
+                </div>
+            </article>
+            <article> <!-- <blockquote> -->
+                <div class="container mt-3">
+                    <blockquote class="blockquote">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde velit neque eligendi.
+                        <foooter class="blockquote-footer">Web3Schools</foooter>
+                    </blockquote>
+                </div>
+            </article>
+            <article> <!-- <code> -->
+                <div class="container mt-3">
+                    The following HTML elements: <code>span</code>, <code>section</code>, and <code>dive</code> defines a section in a document.
+                </div>
+            </article>
+            <article> <!-- <kbd> -->
+                <div class="container mt-3">
+                    Use <kbd>ctrl + p</kbd> to open the Print dialog box.
+                </div>
+            </article>
+        </section>
+        <section> <!--More Typography Classes-->
+            <div class="container mt-3"> <!--lead-->
+                <p>This text is normal</p>
+                <p class="lead">This text has lead class</p>
+            </div>
+            <div class="container mt-3"> <!-- text-start -->
+                <p class="test-start">This text is in the left position</p>
+                <p class="text-center">This text is in the center position</p>
+                <p class="text-end">This text is in the right position</p>
+            </div>
+            <div class="container mt-3"> <!--text-decoration-none-->
+                <a href="#">Link has underline</a>
+                <a href="#" class="text-decoration-none">Link hasnt underline</a>
+            </div>
+            <div class="container mt-3"> <!-- list-unstyled -->
+                <!-- Removes the default list-style and left margin on list items -->
+                <ul class="list-unstyled">
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                </ul>
+            </div>
+            <div class="container mt-3"> <!-- list-inline -->
+                <!-- 
+                    Places all list items on a single line (used together with .list-inline-item on each <li> elements)
+                 -->
+                 <ul class="list-inline">
+                    <li class="list-inline-item">Link 1</li>
+                    <li class="list-inline-item">Link 2</li>
+                    <li class="list-inline-item">Link 3</li>
+                    <li class="list-inline-item">Link 4</li>
+                 </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

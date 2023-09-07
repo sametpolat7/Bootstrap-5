@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>Collapse</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-center display-1">Bootstrap5 Collapse</h1>
+        <!-- Collapsibles are useful when you want to hide and show large amount of content:-->
+        <!-- 
+            The .collapse class indicates a collapsible element (a <div> in our example); this is the content that will be shown or hidden with a click of a button.
+            
+            To control (show/hide) the collapsible content, add the data-bs-toggle="collapse" attribute to an <a> or a <button> element. Then add the data-bs-target="#id" attribute to connect the button with the collapsible content (<div id="demo">).
+
+            Note: For <a> elements, you can use the href attribute instead of the data-bs-target attribute:
+        -->
+    </header>
+    <section> <!--Basic Collapse-->
+        <div class="container mt-3"> <!-- <button> element used-->
+            If you want to see this content you should be click button <br>
+            <button type="button" class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#demo">
+                Click me
+            </button>
+            <div id="demo" class="collapse">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nesciunt iste beatae!
+            </div>
+        </div>
+        <div class="container mt-3"> <!-- <a> element used-->
+            If you want to see this content you should be click " See more " <br>
+            <a href="#demo-a" data-bs-toggle="collapse">See more</a>
+            <div id="demo-a" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis sapiente dolores, quaerat placeat laudantium eaque beatae libero illo voluptates doloremque?
+            </div>
+        </div>
+    </section>
+    <section> <!--Accordion-->
+        <!-- 
+            Note: Use the data-bs-parent attribute to make sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.
+
+            The following example shows a simple accordion by extending the card component.
+        -->
+        <div class="container mt-5">
+            <div class="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="btn" href="#demo1" data-bs-toggle="collapse">
+                            Lorem ipsum dolor sit 1
+                        </a>
+                        </div>
+                        <div id="demo1" class="collapse show" data-bs-parent="#accordion"> <!-- Show classı sayfanın açılışında content kartının açık olmasını sağlar (default=hidden)-->
+                            <div class="card-body">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </div>
+                        </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a href="#demo2" class="btn" data-bs-toggle="collapse">
+                            Lorem ipsum dolor sit 2
+                        </a>
+                    </div>
+                    <div id="demo2" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam mollitia facilis dolores.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a href="#demo3" class="btn" data-bs-toggle="collapse">
+                            Lorem ipsum dolor sit 3
+                        </a>
+                    </div>
+                    <div id="demo3" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius necessitatibus iure doloribus.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

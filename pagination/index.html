@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>Pagination</title>
+</head>
+<body>
+    <header>
+        <h1 class="display-1 text-center">Bootstrap5 Pagination</h1>
+        <!-- To create a basic pagination, add the .pagination class to an <ul> element. Then add the .page-item to each <li> element and a .page-link class to each link inside <li>:-->
+    </header>
+    <section> <!-- Basic Pagination-->
+        <div class="container mt-5">
+            <ul class="pagination"> <!--Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks:-->
+                <li class="page-item disabled"><a href="#" class="page-link">Previous</a></li> <!--Added .disabled-->
+                <li class="page-item active"><a href="#" class="page-link">1</a></li> <!--Added .active-->
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                <li class="page-item"><a href="#" class="page-link">Next</a></li>
+            </ul>
+        </div>
+    </section>
+    <section> <!--Pagination Alignment-->
+        <div class="container mt-3">
+            <ul class="pagination"> <!--Left Alignment (Default)-->
+                <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link">Next</a></li>
+            </ul>
+            <ul class="pagination justify-content-center"> <!--Center #Alignment-->
+                <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link">Next</a></li>
+            </ul>
+            <ul class="pagination justify-content-end"> <!--Right A#lignment-->
+                <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link">Next</a></li>
+            </ul>
+        </div>
+    </section>
+    <section> <!--Breadcrumbs-->
+        <!-- The .breadcrumb and .breadcrumb-item classes indicates the current page's location within a navigational hierarchy:-->
+        <div class="container mt-5">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Country</a></li>
+                <li class="breadcrumb-item"><a href="#">City</a></li>
+                <li class="breadcrumb-item"><a href="#">Village</a></li>
+                <li class="breadcrumb-item active">No: 67</li>
+            </ul>
+        </div>
+
+    </section>
+</body>
+</html>
