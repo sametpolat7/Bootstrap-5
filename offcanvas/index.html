@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>Offcanvas</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-center display-1">Bootstrap5 Offcanvas</h1>
+    <!-- 
+        Offcanvas is similar to modals (hidden by default and shown when activated), except that is often used as a sidebar navigation menu.
+      -->
+    </header>
+    <section> <!--How To Create an Offcanvas Sidebar-->
+        <div class="offcanvas offcanvas-start" id="demo">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title">Heading</h1>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button> <!--Close Button-->
+            </div>
+            <div class="offcanvas-body">
+                <p>Lorem4</p>
+                <p>Lorem4</p>
+            </div>
+        </div>
+        <!--Button to open the offcanvas sidebar-->
+        <button type="button" class="btn btn-outline-primary mb-5" data-bs-toggle="offcanvas" data-bs-target="#demo">
+            Open the canvas
+        </button>
+        <!-- 
+            The .offcanvas class creates the offcanvas sidebar.
+
+            The .offcanvas-start class positions the offcanvas, and makes it 400px wide. See examples below for more positioning classes.
+
+            The .offcanvas-title class ensures proper margins and line-height.
+
+            Then, add your content inside the .offcanvas-body class.
+
+            To open the offcanvas sidebar, you must use a <button> or an <a> element that points to the id of the .offcanvas container (#demo in our example).
+            
+            To open the offcanvas sidebar with an <a> element, you can point to #demo with the href attribute, instead of data-bs-target attribute.
+         -->
+    </section>
+    <section> <!--Offcanvas Position-->
+        <div class="offcanvas offcanvas-end" id="demo-position"> <!--Use the .offcanvas-start|end|top|bottom to position the offcanvas to the left, right, top or bottom:
+        -->
+            <div class="offcanvas-header">
+                <div class="offcanvas-title">
+                    Heading
+                </div>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link">Link 1</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Link 3</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+        <button type="button" class="btn btn-outline-primary f-right" data-bs-toggle="offcanvas" data-bs-target="#demo-position">
+            Open THE Canvas
+        </button>
+    </section>
+</body>
+</html>
